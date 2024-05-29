@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Nacionalidade</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: black;
+            color: white;
+        }
+        #res{
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Declarando nacionalidade</h1>
+    País <input type="text" name="" id="txtnac">
+    <input type="button" value="Verificar" onclick="declarar()">
+    <div id="res">Resultado</div>
+    <script>
+        function declarar(){
+            var nac = window.document.getElementById('nac')
+            var res = window.document.getElementById('res')
+            res.innerHTML = `<p>Seu país é ${nac}.</p>`
+            if (nac == 'Brasil'){
+                res.innerHTML += `<p>Você é brasileiro!</p>`
+            }
+            else{
+                res.innerHTML += `<p>Você é estrangeiro!</p>`
+            }
+        }
+    </script>
+</body>
+</html>
