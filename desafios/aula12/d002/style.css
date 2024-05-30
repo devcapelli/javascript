@@ -17,6 +17,9 @@ main > section{
     margin: auto;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.151);
 }
+div > p#distancia{
+    margin-bottom: -10px;
+}
 div{
     text-align: center;
     padding: 15px;
