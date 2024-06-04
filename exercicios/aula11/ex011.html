@@ -25,14 +25,15 @@
     <div id="res">Resultado</div>
     <script>
         function declarar(){
-            var nac = window.document.getElementById('nac')
+            var txtn = window.document.getElementById('txtnac')
             var res = window.document.getElementById('res')
+            var nac = String(txtnac.value)
             res.innerHTML = `<p>Seu país é ${nac}.</p>`
             if (nac == 'Brasil'){
-                res.innerHTML += `<p>Você é brasileiro!</p>`
+                res.innerHTML += '<p>Você é brasileiro!</p>'
             }
             else{
-                res.innerHTML += `<p>Você é estrangeiro!</p>`
+                res.innerHTML += '<p>Você é estrangeiro!</p>'
             }
         }
     </script>
