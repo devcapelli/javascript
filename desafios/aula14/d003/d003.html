@@ -5,19 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <title>Official Model</title>
+    <title>Desafio 3</title>
 </head>
 <body>
     <header>
-        <h1>Official Model</h1>
+        <h1>Vamos contar</h1>
     </header>
     <main>
         <section>
-            <div>
-
+            <div id="dados">
+                <p>Início: <input type="number" name="inicio" id="txti" maxlength="1000"></p>
+                <p>Fim: <input type="number" name="fim" id="txtf" maxlength="1000"></p>
+                <p>Passo: <input type="number" name="passo" id="txtp" maxlength="10"></p>
+                <input type="button" value="Contar" onclick="contar()">
             </div>
-            <div>
-                
+            <div id="res">
+                Preparando contagem
             </div>
         </section>
     </main>
